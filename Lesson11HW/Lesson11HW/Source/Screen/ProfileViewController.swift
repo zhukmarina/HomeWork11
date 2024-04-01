@@ -42,7 +42,7 @@ class ProfileViewController: BaseViewController {
             firstNameTextField.becomeFirstResponder()
         } else {
             rightBarButton.title = "Edit"
-            view.endEditing(true) // Закриття клавіатури
+            view.endEditing(true) 
         }
 
         updateUI()
@@ -83,7 +83,6 @@ extension ProfileViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = textField.text else { return true }
 
-        // Check if total text length will exceed 30 characters
         if text.count + string.count - range.length > 30 {
             return false
         }
@@ -92,14 +91,14 @@ extension ProfileViewController: UITextFieldDelegate {
     }
 
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        updateUI() // Оновлення лічильників після кожного введеного символу
+        updateUI()
     }
 
     func textFieldDidEndEditing(_ textField: UITextField) {
-        updateUI() // Оновлення лічильників та кольорів після завершення редагування
+        updateUI()
     }
 
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        return editMode // Дозволити встановлення курсора тільки у режимі редагування
+        return editMode
     }
 }
