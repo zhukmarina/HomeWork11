@@ -106,14 +106,44 @@
                     <view key="view" contentMode="scaleToFill" id="7aK-0V-Avf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZv-Zv-PIk">
+                                <rect key="frame" x="159" y="754" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Jc-br-klL">
+                                <rect key="frame" x="20" y="103" width="353" height="605"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="605" id="iM4-PG-JWm"/>
+                                </constraints>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.LLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.orem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="EZN-sy-dJ8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SZv-Zv-PIk" firstAttribute="centerX" secondItem="2Jc-br-klL" secondAttribute="centerX" id="2Ie-oE-wj5"/>
+                            <constraint firstItem="2Jc-br-klL" firstAttribute="top" secondItem="EZN-sy-dJ8" secondAttribute="top" id="A3q-Ad-1uY"/>
+                            <constraint firstItem="SZv-Zv-PIk" firstAttribute="top" secondItem="2Jc-br-klL" secondAttribute="bottom" constant="46" id="D0v-bZ-Yd8"/>
+                            <constraint firstItem="EZN-sy-dJ8" firstAttribute="trailing" secondItem="2Jc-br-klL" secondAttribute="trailing" constant="20" id="dY2-Fb-XpA"/>
+                            <constraint firstItem="2Jc-br-klL" firstAttribute="leading" secondItem="EZN-sy-dJ8" secondAttribute="leading" constant="20" id="dhL-ne-EuU"/>
+                            <constraint firstItem="SZv-Zv-PIk" firstAttribute="centerX" secondItem="EZN-sy-dJ8" secondAttribute="centerX" id="zDh-Zm-tir"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Terms &amp; Privacy" id="EOy-91-bQu"/>
+                    <connections>
+                        <outlet property="agreeButton" destination="SZv-Zv-PIk" id="XNN-SW-qDt"/>
+                        <outlet property="textView" destination="2Jc-br-klL" id="KQk-Yg-umj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDn-wV-R30" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1378" y="4"/>
+            <point key="canvasLocation" x="1377.8625954198474" y="3.5211267605633805"/>
         </scene>
         <!--Contact Us-->
         <scene sceneID="H1J-Cu-rAH">
